@@ -2,24 +2,11 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
 
-const Home = React.FC = ({ navigation }) => {
+const Ingresso = React.FC = ({ navigation }) => {
 
   const oportunidades = () => (    
       navigation.navigate('Oportunidades')
     )
-
-    const vagas = () => (    
-      navigation.navigate('Vagas')
-    )
-
-    const como_voce_esta = () => (    
-      navigation.navigate('ComoVoceEsta')
-    )
-
-    const dicas = () => (    
-      navigation.navigate('Dicas')
-    )
-
 
   return (
     <View style={styles.container}>
@@ -32,24 +19,24 @@ const Home = React.FC = ({ navigation }) => {
     justifyContent: "center"
   }} onPress={oportunidades}>
         <View>
-          <Text style={styles.title}>OPORTUNIDADES DE INGRESSO</Text>
+          <Text style={styles.title}>SISU</Text>
         </View>
         </TouchableOpacity>
       </View>
      
 
       <View style={styles.box}>
-      <TouchableOpacity style={styles.inner} onPress={vagas}>
+      <TouchableOpacity style={styles.inner} onPress={oportunidades}>
         <View>
-          <Text style={styles.title}>VAGAS NAS UNIVERSIDADES</Text>
+          <Text style={styles.title}>Prouni</Text>
         </View>
         </TouchableOpacity>
       </View>
 
       <View style={styles.box}>
-      <TouchableOpacity style={styles.inner} onPress={como_voce_esta}>
+      <TouchableOpacity style={styles.inner} onPress={oportunidades}>
         <View>
-          <Text style={styles.title}>COMO VOCÊ ESTÁ?</Text>
+          <Text style={styles.title}>FIES</Text>
         </View>
         </TouchableOpacity>
       </View>
@@ -60,9 +47,9 @@ const Home = React.FC = ({ navigation }) => {
     backgroundColor: "#41AAC2",
     alignItems: "center",
     justifyContent: "center"
-  }} onPress={dicas}>
+  }} onPress={oportunidades}>
         <View>
-          <Text style={styles.title}>DICAS DO UNIAQUI</Text>
+          <Text style={styles.title}>P-FIES</Text>
         </View>
         </TouchableOpacity>
       </View>
@@ -93,10 +80,10 @@ const styles = StyleSheet.create({
   },
   title: {
     fontWeight: 'bold',
-    fontSize: 18,
+    fontSize: 40,
     color: 'white',
     textAlign: "center"
   }
 });
 
-export default Home;
+export default Ingresso;
