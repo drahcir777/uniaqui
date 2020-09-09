@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text, FlatList, StyleSheet, Linking} from 'react-native';
+import { View, Text, FlatList, StyleSheet, Linking, Button} from 'react-native';
 
-import faculdadesParticulares from '../../../faculdades/index';
+import faculdadesParticulares from '../../../faculdades/faculdade-particulares';
 
 
 export default function UniParticulares() {
@@ -17,7 +17,10 @@ export default function UniParticulares() {
             <Text style={styles.title}>
                 {item.nome}
             </Text>
-            </View>
+            <Button onPress={() => (Linking.openURL(`${item.url}`))} 
+              title= "Ir para o site"
+            />  
+           </View>
             )}
         />
         </View>
@@ -36,17 +39,17 @@ const styles = StyleSheet.create({
     },
     list: {
         backgroundColor: 'black',
-        padding: 20,
+        padding: 5,
         marginVertical: 8,
-        marginHorizontal: 16,
-        height: 85
+        marginHorizontal: 8,
+        height: 85, 
       
     },
     inner:{
       flex: 1,
       backgroundColor: "#6EC7DE",
       alignItems: "center",
-      justifyContent: "center",
+      justifyContent: "center"
     },
     title: {
       fontWeight: 'bold',

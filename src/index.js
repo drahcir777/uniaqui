@@ -13,6 +13,7 @@ import Vagas from './pages/Vagas';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import UniPublicas from './pages/Vagas/UniPublicas';
 
 const Stack = createStackNavigator();
 
@@ -76,6 +77,13 @@ export default function App() {
             />
       
       <Stack.Screen name="UniParticulares"component={UniParticulares}
+           options={{
+            title: "VAGAS NAS UNIVERSIDADES",
+            headerTintColor: "#6EC7DE"
+              }} 
+            />
+
+<Stack.Screen name="UniPublicas"component={UniPublicas}
            options={{
             title: "VAGAS NAS UNIVERSIDADES",
             headerTintColor: "#6EC7DE"

@@ -1,11 +1,14 @@
 export default faculdadesPublicas = [{
     id: 1,
-    nome: "Instituto Unificado de Ensino Superior Objetivo (IUESO)",
-},{
+    nome: "Instituto Federal de Goiás (IFG)",
+    url: "https://www.ifg.edu.br/"
+}, {
     id: 2,
-    nome: "Instituto de Pós-Graduação & Graduação (IPOG)",
-},{
+    nome: "Instituto Federal Goiano",
+    url: "https://www.ifgoiano.edu.br/"
+}, {
     id: 3,
-    nome: "Pontifícia Universidade Católica de Goiás (PUC GOIÁS)",
+    nome: "Universidade Federal de Goiás (UFG)",
+    url: "https://www.ufg.br/"
 }
 ]
