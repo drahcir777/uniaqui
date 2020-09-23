@@ -14,12 +14,16 @@ export default function UniPublicas() {
                     data={faculdadesParticulares}
                     renderItem={({ item }) => (
                         <View style={styles.list}>
+                            <View style={styles.separar}>
                             <Text style={styles.title}>
                                 {item.nome}
                             </Text>
+                            </View>
+                            <View style={styles.botao}>
                             <Button onPress={() => (Linking.openURL(`${item.url}`))}
                                 title="Ir para o site"
                             />
+                            </View>
                         </View>
                     )}
                 />
@@ -36,25 +40,33 @@ const styles = StyleSheet.create({
         padding: 5,
         flexDirection: "row",
         flexWrap: "wrap"
-    },
-    list: {
-        backgroundColor: 'black',
-        padding: 5,
+      },
+      list: {
+        backgroundColor: '#EDAABC',
+        padding: 1,
         marginVertical: 8,
         marginHorizontal: 8,
         height: 85,
-
-    },
-    inner: {
+        justifyContent: "space-between",
+        borderRadius: 14
+      },
+      inner: {
         flex: 1,
         backgroundColor: "#6EC7DE",
         alignItems: "center",
         justifyContent: "center"
-    },
-    title: {
+      },
+      title: {
         fontWeight: 'bold',
         fontSize: 18,
         color: 'white',
         textAlign: "center"
-    }
+      },
+      botao: {
+        width: "100%"
+      },
+      separar: {
+         marginTop: 5
+         
+      }
 });

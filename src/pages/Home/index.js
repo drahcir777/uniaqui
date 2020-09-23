@@ -27,12 +27,13 @@ const Home = React.FC = ({ navigation }) => {
       <View style={styles.box}>
         <TouchableOpacity style={{
           flex: 1,
-          backgroundColor: "#41AAC2",
+          backgroundColor: "#C09ECA",
           alignItems: "center",
-          justifyContent: "center"
+          justifyContent: "center",
+          borderRadius: 50
         }} onPress={oportunidades}>
           <View>
-            <Text style={styles.title}>OPORTUNIDADES DE INGRESSO</Text>
+            <Text style={styles.title}>FORMAS DE INGRESSO</Text>
           </View>
         </TouchableOpacity>
       </View>
@@ -47,7 +48,13 @@ const Home = React.FC = ({ navigation }) => {
       </View>
 
       <View style={styles.box}>
-        <TouchableOpacity style={styles.inner} onPress={como_voce_esta}>
+        <TouchableOpacity style={{
+          flex: 1,
+          backgroundColor: "#EDAABC",
+          alignItems: "center",
+          justifyContent: "center",
+          borderRadius: 50
+        }} onPress={como_voce_esta}>
           <View>
             <Text style={styles.title}>COMO VOCÊ ESTÁ?</Text>
           </View>
@@ -57,9 +64,10 @@ const Home = React.FC = ({ navigation }) => {
       <View style={styles.box}>
         <TouchableOpacity style={{
           flex: 1,
-          backgroundColor: "#41AAC2",
+          backgroundColor: "#F3DC7C",
           alignItems: "center",
-          justifyContent: "center"
+          justifyContent: "center",
+          borderRadius: 50
         }} onPress={dicas}>
           <View>
             <Text style={styles.title}>DICAS DO UNIAQUI</Text>
@@ -72,7 +80,7 @@ const Home = React.FC = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "white",
+    backgroundColor: "#BEE0E3",
     width: "100%",
     height: "100%",
     padding: 5,
@@ -82,14 +90,15 @@ const styles = StyleSheet.create({
   box: {
     width: "50%",
     height: "50%",
-    padding: 0,
+    padding: 10,
 
   },
   inner: {
     flex: 1,
-    backgroundColor: "#6EC7DE",
+    backgroundColor: "#EFB6D4",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    borderRadius: 50
   },
   title: {
     fontWeight: 'bold',

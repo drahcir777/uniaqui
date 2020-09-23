@@ -1,56 +1,70 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 
 const Ingresso = React.FC = ({ navigation }) => {
 
-  const oportunidades = () => (    
-      navigation.navigate('Oportunidades')
-    )
+  const oportunidades = () => (
+    navigation.navigate('Oportunidades')
+  )
 
   return (
     <View style={styles.container}>
-      
-      <View style={styles.box}>
-      <TouchableOpacity style={{
-    flex: 1,
-    backgroundColor: "#41AAC2",
-    alignItems: "center",
-    justifyContent: "center"
-  }} onPress={oportunidades}>
-        <View>
-          <Text style={styles.title}>SISU</Text>
-        </View>
-        </TouchableOpacity>
-      </View>
-     
 
       <View style={styles.box}>
-      <TouchableOpacity style={styles.inner} onPress={oportunidades}>
-        <View>
-          <Text style={styles.title}>Prouni</Text>
-        </View>
+        <TouchableOpacity style={{
+          flex: 1,
+          backgroundColor: "#C09ECA",
+          alignItems: "center",
+          justifyContent: "center",
+          borderRadius: 50
+        }} onPress={oportunidades}>
+          <View>
+            <Text style={styles.title}>SISU</Text>
+          </View>
         </TouchableOpacity>
       </View>
 
+
       <View style={styles.box}>
-      <TouchableOpacity style={styles.inner} onPress={oportunidades}>
-        <View>
-          <Text style={styles.title}>FIES</Text>
-        </View>
+        <TouchableOpacity style={{
+          flex: 1,
+          backgroundColor: "#EFB6D4",
+          alignItems: "center",
+          justifyContent: "center",
+          borderRadius: 50
+        }} onPress={oportunidades}>
+          <View>
+            <Text style={styles.title}>Prouni</Text>
+          </View>
         </TouchableOpacity>
       </View>
 
       <View style={styles.box}>
-      <TouchableOpacity style={{
-    flex: 1,
-    backgroundColor: "#41AAC2",
-    alignItems: "center",
-    justifyContent: "center"
-  }} onPress={oportunidades}>
-        <View>
-          <Text style={styles.title}>P-FIES</Text>
-        </View>
+        <TouchableOpacity style={{
+          flex: 1,
+          backgroundColor: "#EDAABC",
+          alignItems: "center",
+          justifyContent: "center",
+          borderRadius: 50
+        }} onPress={oportunidades}>
+          <View>
+            <Text style={styles.title}>FIES</Text>
+          </View>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.box}>
+        <TouchableOpacity style={{
+          flex: 1,
+          backgroundColor: "#F3DC7C",
+          alignItems: "center",
+          justifyContent: "center",
+          borderRadius: 50
+        }} onPress={oportunidades}>
+          <View>
+            <Text style={styles.title}>P-FIES</Text>
+          </View>
         </TouchableOpacity>
       </View>
     </View>
@@ -59,24 +73,25 @@ const Ingresso = React.FC = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "white",
-     width: "100%", 
-     height: "100%",
-     padding: 5,
-     flexDirection: "row",
-     flexWrap: "wrap"
+    backgroundColor: "#BEE0E3",
+    width: "100%",
+    height: "100%",
+    padding: 5,
+    flexDirection: "row",
+    flexWrap: "wrap"
   },
   box: {
-    width: "50%",
+    width: "100%",
     height: "50%",
-    padding: 0,
-    
+    padding: 15,
+
   },
-  inner:{
+  inner: {
     flex: 1,
-    backgroundColor: "#6EC7DE",
+    backgroundColor: "#EFB6D4",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    borderRadius: 50
   },
   title: {
     fontWeight: 'bold',

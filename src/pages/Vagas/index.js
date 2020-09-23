@@ -18,9 +18,10 @@ const Vagas = React.FC = ({ navigation }) => {
       <View style={styles.box}>
         <TouchableOpacity style={{
           flex: 1,
-          backgroundColor: "#41AAC2",
+          backgroundColor: "#C09ECA",
           alignItems: "center",
-          justifyContent: "center"
+          justifyContent: "center",
+          borderRadius: 50
         }} onPress={uni}>
           <View>
             <Text style={styles.title}>FACULDADE/UNIVERSIDADES PARTICULARES</Text>
@@ -41,7 +42,7 @@ const Vagas = React.FC = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "white",
+    backgroundColor: "#BEE0E3",
     width: "100%",
     height: "100%",
     padding: 5,
@@ -50,14 +51,15 @@ const styles = StyleSheet.create({
   box: {
     width: "100%",
     height: "50%",
-    padding: 0,
+    padding: 15,
 
   },
   inner: {
     flex: 1,
-    backgroundColor: "#6EC7DE",
+    backgroundColor: "#EDAABC",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    borderRadius: 50
   },
   title: {
     fontWeight: 'bold',
