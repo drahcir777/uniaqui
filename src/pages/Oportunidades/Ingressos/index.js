@@ -4,8 +4,20 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 const Ingresso = React.FC = ({ navigation }) => {
 
-  const oportunidades = () => (
-    navigation.navigate('Oportunidades')
+  const sisu = () => (
+    navigation.navigate('Sisu')
+  )
+
+  const prouni = () => (
+    navigation.navigate('Prouni')
+  )
+
+  const pfies = () => (
+    navigation.navigate('Pfies')
+  )
+
+  const fies = () => (
+    navigation.navigate('Fies')
   )
 
   return (
@@ -18,7 +30,7 @@ const Ingresso = React.FC = ({ navigation }) => {
           alignItems: "center",
           justifyContent: "center",
           borderRadius: 50
-        }} onPress={oportunidades}>
+        }} onPress={sisu}>
           <View>
             <Text style={styles.title}>SISU</Text>
           </View>
@@ -33,7 +45,7 @@ const Ingresso = React.FC = ({ navigation }) => {
           alignItems: "center",
           justifyContent: "center",
           borderRadius: 50
-        }} onPress={oportunidades}>
+        }} onPress={prouni}>
           <View>
             <Text style={styles.title}>Prouni</Text>
           </View>
@@ -47,7 +59,7 @@ const Ingresso = React.FC = ({ navigation }) => {
           alignItems: "center",
           justifyContent: "center",
           borderRadius: 50
-        }} onPress={oportunidades}>
+        }} onPress={fies}>
           <View>
             <Text style={styles.title}>FIES</Text>
           </View>
@@ -61,7 +73,7 @@ const Ingresso = React.FC = ({ navigation }) => {
           alignItems: "center",
           justifyContent: "center",
           borderRadius: 50
-        }} onPress={oportunidades}>
+        }} onPress={pfies}>
           <View>
             <Text style={styles.title}>P-FIES</Text>
           </View>
@@ -81,9 +93,9 @@ const styles = StyleSheet.create({
     flexWrap: "wrap"
   },
   box: {
-    width: "100%",
+    width: "50%",
     height: "50%",
-    padding: 15,
+    padding: 13,
 
   },
   inner: {

@@ -1,17 +1,17 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, ScrollView } from 'react-native';
 
 export default function Dicas() {
 
  return (
 
    <View style={styles.container}>
+       <ScrollView >
        <Text style={{textAlign: "justify",color: "white",  fontSize: 17, fontWeight: "bold", marginTop: 20, marginLeft: 20}}>No dia do vestibular ALIMENTE-SE BEM:</Text>
        <View style={styles.paragrafo}>
             <Text style={styles.text}>
             A alimentação também é importante na hora da prova. Como os exames duram, comumente, mais de duas horas, o estudante precisa ter energia e concentração. Veja algumas dicas:
             </Text>
-
             <Text style={styles.text}>
             1. É importante manter a alimentação equili- brada e não fazer nenhuma grande mudança no que é consumido;
             </Text>
@@ -26,9 +26,16 @@ export default function Dicas() {
             4. Caso a prova seja à tarde, prefira fazer a refeição em casa para não correr o risco de comer algo que você não sabe como foi prepa- rado;
             </Text>
             <Text style={styles.text}>
-            5. Como lanche durante o vestibular, leve frutas fáceis de comer (como maçã e banana), mix de castanhas, barrinhas de cereal, biscoitos
-            </Text>   
+            5. Como lanche durante o vestibular, leve frutas fáceis de comer (como maçã e banana), mix de castanhas, barrinhas de cereal, biscoitos integrais e, claro, chocolate amargo ou meio amargo!
+            </Text>
+            <Text style={styles.text}>
+            6. Não leve alimentos que precisam de refrigeração;
+            </Text>
+            <Text style={styles.text}>
+            7. Hidrate-se! A água também pode ser substituída pela água de coco, fonte de energia. Mas evite refrigerantes por causa dos desconfortos abdominais.
+            </Text>
        </View>
+       </ScrollView>
    </View>
   );
 }

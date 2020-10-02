@@ -1,5 +1,8 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
+
+import Equilibrio from '../../assets/EQULIBRIO.png'
+import Saude from '../../assets/SAUDE.png'
 
 
 const ComoVoceEsta = React.FC = ({ navigation }) => {
@@ -26,6 +29,13 @@ const ComoVoceEsta = React.FC = ({ navigation }) => {
         <View>
           <Text style={styles.title}>Cuide da ansiedade</Text>
         </View>
+
+        <View>
+              <Image 
+                style={styles.icones}
+                source={Saude}
+              />
+          </View>
         </TouchableOpacity>
       </View>
 
@@ -34,6 +44,13 @@ const ComoVoceEsta = React.FC = ({ navigation }) => {
         <View>
           <Text style={styles.title}>Mantenha o equilíbrio</Text>
         </View>
+
+        <View>
+              <Image 
+                style={styles.icones}
+                source={Equilibrio}
+              />
+          </View>
         </TouchableOpacity>
       </View>
     </View>
@@ -67,6 +84,9 @@ const styles = StyleSheet.create({
     color: 'white',
     textAlign: "center",
     maxWidth: "90%"
+  },
+  icones: {
+    marginTop: 20
   }
 });
 

@@ -10,6 +10,10 @@ import UniParticulares from './pages/Vagas/UniParticulares';
 import Dicas from './pages/Dicas';
 import ComoVoceEsta from './pages/Como-voce-estar';
 import Vagas from './pages/Vagas';
+import Sisu from './pages/Oportunidades/Ingressos/Sisu'
+import Pfies from './pages/Oportunidades/Ingressos/P-fies'
+import Fies from './pages/Oportunidades/Ingressos/Fies'
+import Prouni from './pages/Oportunidades/Ingressos/Prouni'
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -89,7 +93,36 @@ export default function App() {
             headerTintColor: "#6EC7DE"
               }} 
             />
-        </Stack.Navigator>
+
+<Stack.Screen name="Sisu"component={Sisu}
+           options={{
+            title: "Sisu",
+            headerTintColor: "#6EC7DE"
+              }} 
+            />
+
+<Stack.Screen name="Pfies"component={Pfies}
+           options={{
+            title: "P-Fies",
+            headerTintColor: "#6EC7DE"
+              }} 
+            />
+
+<Stack.Screen name="Fies"component={Fies}
+           options={{
+            title: "Fies",
+            headerTintColor: "#6EC7DE"
+              }} 
+            />
+
+<Stack.Screen name="Prouni"component={Prouni}
+           options={{
+            title: "Prouni",
+            headerTintColor: "#6EC7DE"
+              }} 
+            />
+            
+        </Stack.Navigator>   
     </NavigationContainer>
     
   );

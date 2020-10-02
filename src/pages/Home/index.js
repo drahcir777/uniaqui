@@ -1,5 +1,9 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import Foguete from '../../assets/FOGUETE.png'
+import Universidades from '../../assets/UNIVERSIDADE.png'
+import Cerebro from '../../assets/CEREBRO.png'
+import Lampada from '../../assets/LAMPADA.png'
 
 
 const Home = React.FC = ({ navigation }) => {
@@ -35,6 +39,12 @@ const Home = React.FC = ({ navigation }) => {
           <View>
             <Text style={styles.title}>FORMAS DE INGRESSO</Text>
           </View>
+          <View>
+              <Image 
+                style={styles.icones}
+                source={Foguete}
+              />
+          </View>
         </TouchableOpacity>
       </View>
 
@@ -43,6 +53,13 @@ const Home = React.FC = ({ navigation }) => {
         <TouchableOpacity style={styles.inner} onPress={vagas}>
           <View>
             <Text style={styles.title}>VAGAS NAS UNIVERSIDADES</Text>
+          </View>
+
+          <View>
+              <Image 
+                style={styles.icones}
+                source={Universidades}
+              />
           </View>
         </TouchableOpacity>
       </View>
@@ -58,6 +75,13 @@ const Home = React.FC = ({ navigation }) => {
           <View>
             <Text style={styles.title}>COMO VOCÊ ESTÁ?</Text>
           </View>
+
+          <View>
+              <Image 
+                style={styles.icones}
+                source={Cerebro}
+              />
+          </View>
         </TouchableOpacity>
       </View>
 
@@ -71,6 +95,13 @@ const Home = React.FC = ({ navigation }) => {
         }} onPress={dicas}>
           <View>
             <Text style={styles.title}>DICAS DO UNIAQUI</Text>
+          </View>
+
+          <View>
+              <Image 
+                style={styles.icones}
+                source={Lampada}
+              />
           </View>
         </TouchableOpacity>
       </View>
@@ -102,9 +133,12 @@ const styles = StyleSheet.create({
   },
   title: {
     fontWeight: 'bold',
-    fontSize: 18,
+    fontSize: 22.3,
     color: 'white',
     textAlign: "center"
+  },
+  icones:{
+    marginTop: 20
   }
 });
 
