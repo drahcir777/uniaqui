@@ -4,9 +4,9 @@ import { View, Text, StyleSheet, ScrollView } from 'react-native';
 export default function Dicas() {
 
  return (
-
+<ScrollView >
    <View style={styles.container}>
-       <ScrollView >
+       
        <Text style={{textAlign: "justify",color: "white",  fontSize: 17, fontWeight: "bold", marginTop: 20, marginLeft: 20}}>No dia do vestibular ALIMENTE-SE BEM:</Text>
        <View style={styles.paragrafo}>
             <Text style={styles.text}>
@@ -35,8 +35,9 @@ export default function Dicas() {
             7. Hidrate-se! A água também pode ser substituída pela água de coco, fonte de energia. Mas evite refrigerantes por causa dos desconfortos abdominais.
             </Text>
        </View>
-       </ScrollView>
+       
    </View>
+   </ScrollView>
   );
 }
 

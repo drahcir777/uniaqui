@@ -94,7 +94,7 @@ const Home = React.FC = ({ navigation }) => {
           borderRadius: 50
         }} onPress={dicas}>
           <View>
-            <Text style={styles.title}>DICAS DO UNIAQUI</Text>
+            <Text style={styles.title}>DICAS DO VC NA FACUL</Text>
           </View>
 
           <View>

@@ -27,7 +27,7 @@ export default function App() {
         <Stack.Navigator>
             <Stack.Screen name="HOME" component={Home}
             options={{
-                title: "UNIAQUI",
+                title: "VC NA FACUL",
                 headerTintColor: "#6EC7DE"
             }}
             />
@@ -75,7 +75,7 @@ export default function App() {
 
 <Stack.Screen name="Dicas"component={Dicas}
            options={{
-            title: "DICAS DO UNIAQUI",
+            title: "DICAS DO VC NA FACUL",
             headerTintColor: "#6EC7DE"
               }} 
             />
